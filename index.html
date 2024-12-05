@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Trivia Quiz</title>
+</head>
+<body>
+    <h3>Welcome liibaan!</h3>
+
+        <div id="main-menu" class="menu">
+            <label for="num-questions">Number of Questions:</label>
+            <input id="num-questions" type="number" min="1" max="50" value="5">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="9">General Knowledge</option>
+                <option value="11">Film</option>
+                <option value="21">Sports</option>
+            </select>
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="start-button">Start Quiz</button>
+        </div>
+
+        <div id="quiz-container" class="hidden">
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="answer-buttons" class="answer-buttons"></div>
+            </div>
+            <button id="next-button" class="hidden">Next</button>
+        </div>
+
+        <div id="result-container" class="menu hidden">
+            <h2 id="result-text"></h2>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+</head>
+<body>
